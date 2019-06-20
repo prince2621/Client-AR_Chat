@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Agora ARCore</string>
+
+    <string name="private_broadcasting_app_id">
+
+01322f77a71d44fabb0e422d09f59335</string>
+    <string name="ar_mode">AR mode</string>
+    <string name="agora_mode">Agora mode</string>
+    <string name="show_point">Show point cloud</string>
+    <string name="hide_point">Hide point cloud</string>
+    <string name="show_plane">Show plane</string>
+    <string name="hide_plane">Hide plane</string>
+    <string name="zoom_in">Zoom in</string>
+    <string name="zoom_out">Zoom out</string>
+</resources>

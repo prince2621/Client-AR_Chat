@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "988706341709",
+    "firebase_url": "https://fcmtest-3a3c5.firebaseio.com",
+    "project_id": "fcmtest-3a3c5",
+    "storage_bucket": "fcmtest-3a3c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988706341709:android:f8885d91bdb6553c",
+        "android_client_info": {
+          "package_name": "com.agora.arcore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988706341709-4rasvgv4mb9a2uq8hsge2qcf6j785fl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agora.arcore",
+            "certificate_hash": "05fd52c06e35281f0cb25de3bf21fd0600367ab9"
+          }
+        },
+        {
+          "client_id": "988706341709-5muou7uu3eep330b1qonkdmj9hf7gijf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeRpBdkLCTHgH_dS8mrFc01OX62MnrU9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988706341709-5muou7uu3eep330b1qonkdmj9hf7gijf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "988706341709-a2h36379e00pj9m7hq2f1dlgh6n0kk03.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ardeploy.fcmtest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988706341709:android:0bb14c3cea2475f0",
+        "android_client_info": {
+          "package_name": "io.agora.openlive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988706341709-9kv7u39aehgnge8r5el26kqimu7s7kee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.agora.openlive",
+            "certificate_hash": "05fd52c06e35281f0cb25de3bf21fd0600367ab9"
+          }
+        },
+        {
+          "client_id": "988706341709-5muou7uu3eep330b1qonkdmj9hf7gijf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeRpBdkLCTHgH_dS8mrFc01OX62MnrU9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988706341709-5muou7uu3eep330b1qonkdmj9hf7gijf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "988706341709-a2h36379e00pj9m7hq2f1dlgh6n0kk03.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ardeploy.fcmtest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
