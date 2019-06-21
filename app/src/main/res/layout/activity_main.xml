@@ -9,6 +9,110 @@
         android:layout_height="fill_parent"
         android:layout_gravity="top" />
 
+    <fragment
+        android:id="@+id/sceneform_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-62dp" />
+
+    <LinearLayout
+        android:id="@+id/controlsPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/panel"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/clearButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/clear_drawing"
+            android:src="@drawable/ic_delete" />
+
+        <ImageView
+            android:id="@+id/colorPickerIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="14dp"
+            android:contentDescription="@string/select_color"
+            android:src="@drawable/ic_selected_white" />
+
+        <ImageView
+            android:id="@+id/undoButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="14dp"
+            android:contentDescription="@string/undo_last_drawing_element"
+            android:src="@drawable/ic_undo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/colorPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="103dp"
+        android:background="@drawable/panel"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/whiteCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="14dp"
+            android:contentDescription="@string/white_color"
+            android:src="@drawable/ic_white_circle" />
+
+        <ImageView
+            android:id="@+id/redCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="14dp"
+            android:contentDescription="@string/red_color"
+            android:src="@drawable/ic_red_circle" />
+
+        <ImageView
+            android:id="@+id/greenCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="14dp"
+            android:contentDescription="@string/green_color"
+            android:src="@drawable/ic_green_circle" />
+
+        <ImageView
+            android:id="@+id/blueCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="14dp"
+            android:contentDescription="@string/blue_color"
+            android:src="@drawable/ic_blue_circle" />
+
+        <ImageView
+            android:id="@+id/blackCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="14dp"
+            android:contentDescription="@string/black_color"
+            android:src="@drawable/ic_black_circle" />
+
+        <ImageView
+            android:id="@+id/rainbowCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/rainbow_color"
+            android:src="@drawable/ic_rainbow_circle" />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="160dp"
         android:layout_height="wrap_content"
