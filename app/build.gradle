@@ -38,5 +38,8 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'io.agora.rtc:full-sdk:2.3.0'
     implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-database:17.0.0'
+
+
 }
 apply plugin: 'com.google.gms.google-services'

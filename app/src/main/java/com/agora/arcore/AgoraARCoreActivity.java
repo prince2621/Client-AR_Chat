@@ -8,6 +8,7 @@ import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BaseTransientBottomBar;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -29,7 +30,7 @@ import com.agora.arcore.rendering.PlaneRenderer;
 import com.agora.arcore.rendering.PointCloudRenderer;
 import com.google.ar.core.Anchor;
 import com.google.ar.core.ArCoreApk;
-//import com.google.ar.core.Camera;
+import com.google.ar.core.Camera;
 import com.google.ar.core.Config;
 import com.google.ar.core.Frame;
 import com.google.ar.core.HitResult;
@@ -80,7 +81,7 @@ import com.google.ar.core.Pose;
 import com.google.ar.core.TrackingState;
 import com.google.ar.sceneform.AnchorNode;
 import com.google.ar.sceneform.ArSceneView;
-import com.google.ar.sceneform.Camera;
+//import com.google.ar.sceneform.Camera;
 import com.google.ar.sceneform.FrameTime;
 import com.google.ar.sceneform.HitTestResult;
 import com.google.ar.sceneform.Scene;
@@ -93,6 +94,11 @@ import com.google.ar.sceneform.rendering.Texture;
 import com.google.ar.sceneform.rendering.Texture.Sampler;
 import com.google.ar.sceneform.rendering.Texture.Sampler.WrapMode;
 import com.google.ar.sceneform.ux.ArFragment;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.concurrent.CompletionException;
@@ -111,7 +117,9 @@ public class AgoraARCoreActivity extends AppCompatActivity implements GLSurfaceV
     private static final Color GREEN = new Color(android.graphics.Color.GREEN);
     private static final Color BLUE = new Color(android.graphics.Color.BLUE);
     private static final Color BLACK = new Color(android.graphics.Color.BLACK);
-
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference mRootReference = firebaseDatabase.getReference();
+    private DatabaseReference mChildReference = mRootReference.child("message");
     private ArFragment fragment;
     private AnchorNode anchorNode;
     private final ArrayList<Stroke> strokes = new ArrayList<>();
@@ -921,7 +929,7 @@ public class AgoraARCoreActivity extends AppCompatActivity implements GLSurfaceV
     @Override
     public void onPeekTouch(HitTestResult hitTestResult, MotionEvent tap) {
         int action = tap.getAction();
-        Camera camera = fragment.getArSceneView().getScene().getCamera();
+        com.google.ar.sceneform.Camera camera = fragment.getArSceneView().getScene().getCamera();
         Ray ray = camera.screenPointToRay(tap.getX(), tap.getY());
         Vector3 drawPoint = ray.getPoint(DRAW_DISTANCE);
         if (action == MotionEvent.ACTION_DOWN) {
