@@ -2,7 +2,7 @@
 
 1. Extracted Agora ARCore from Agora Sample Repository
 2. Added Sceneform Drawing to it
-3. Added the poject to firebase realtime Database
+3. Added the project to firebase realtime database
 
 # How to use this
 
@@ -17,4 +17,9 @@
       }
 5. Run the sample application in Android Studio. Move the first device until you find a horizontal surface.
 6. Touch the plane indicator to add a virtual display screen to your AR session. The virtual display screen streams the video from the remote user.
-7. On the second device, launch the Agent-AR_Chat sample application using the same app ID used in this project, and join the channel arcore as a broadcaster.
+7. On the second device, launch the Agent-AR_Chat application using the same app ID used in this project, and join the channel '*arcore*' as a *broadcaster*.
+
+# Problems
+
+1. Sceneform uses fragment while Agora transmitted GLView.
+2. After integration, Agora call did not connect the two devices.
