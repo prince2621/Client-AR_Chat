@@ -1,6 +1,6 @@
 # Agora video with AR Core and Sceneform drawing integrated
 
-1. Extracted Agora ARCore from Advanced-Video 
+1. Extracted Agora ARCore from Agora Sample Repository
 2. Added Sceneform Drawing to it
 3. Added the poject to firebase realtime Database
 
