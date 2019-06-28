@@ -23,3 +23,5 @@
 
 1. Sceneform uses fragment while Agora transmitted GLView.
 2. After integration, Agora call did not connect the two devices.
+
+https://github.com/AgoraIO/Advanced-Video/tree/master/Augmented-Reality/Agora-Video-With-ARCore
